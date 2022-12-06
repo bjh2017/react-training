@@ -9,7 +9,6 @@ const Main = () => {
   const title = "Title of a longer featured blog post";
   return (
     <main className="container">
-      <Cart />
       {/* <FeaturedPost title={title} summary={summary} />
       <Cards />
       <BlogBody /> */}

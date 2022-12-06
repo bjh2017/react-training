@@ -1,17 +1,24 @@
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="blog-header lh-1 py-3">
       <div className="row flex-nowrap justify-content-between align-items-center">
-        <div className="col-4 pt-1">
+        <div className="col-2 pt-1">
           <a className="link-secondary" href="#">
             Subscribe
           </a>
         </div>
-        <div className="col-4 text-center">
+        <div className="col-2 pt-1">
+          {props.itemsCount > 0 && (
+            <h1>
+              <span className="badge bg-secondary m-3">{props.itemsCount}</span>
+            </h1>
+          )}
+        </div>
+        {/* <div className="col-4 text-center">
           <a className="blog-header-logo text-dark" href="#">
             Large
           </a>
-        </div>
+        </div> */}
         <div className="col-4 d-flex justify-content-end align-items-center">
           <a className="link-secondary" href="#" aria-label="Search">
             <svg

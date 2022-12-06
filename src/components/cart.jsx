@@ -1,12 +1,7 @@
-import { useState } from "react";
 import Item from "./item";
 
-const Cart = () => {
-  const [rows, setRows] = useState([
-    { id: 1, value: 1 },
-    { id: 2, value: 4 },
-    { id: 3, value: 1 },
-  ]);
+const Cart = (props) => {
+  const { rows, setRows } = props;
 
   const addRow = () => {
     const newRows = [...rows];
